@@ -4,7 +4,10 @@ Node 16.15.0
 
 Download .zip then :
 
-rm -rf node_modules
-yarn cache clean
-yarn
-yarn dev
+- rm -rf node_modules
+
+- yarn cache clean
+
+- yarn
+
+- yarn dev
