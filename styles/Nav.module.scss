@@ -1,0 +1,153 @@
+@use './abstracts/colours.scss';
+@use './abstracts/font.scss';
+
+.Container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: colours.$mainColour;
+  padding: 16px 32px;
+  border-bottom: 1px solid colours.$secondaryColour;
+}
+.logo {
+  margin-right: auto;
+  position: absolute;
+}
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  user-select: none;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: colours.$secondaryColour;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+  }
+}
+.hamburger:hover span:nth-child(2) {
+  transform: translate(10px);
+  background-color: colours.$secondaryColour;
+}
+
+.hamburger.isActive span:nth-child(1) {
+  opacity: 0;
+  transform: translate(15px);
+  background-color: colours.$mainColour;
+}
+.hamburger.isActive span:nth-child(2) {
+  transform: translate(0px, -0.3rem) rotate(45deg);
+  background-color: colours.$mainColour;
+}
+
+.hamburger.isActive span:nth-child(3) {
+  transform: translate(-0.2rem, 0.55rem) rotate(-45deg);
+  background-color: colours.$mainColour;
+}
+.hamburger.isActive:hover span {
+  background-color: colours.$mainColour;
+}
+.mobileNav {
+  opacity: 1;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  background-color: colours.$secondaryColour;
+  padding-top: 120px;
+  transition: 0.4s;
+  a:hover {
+    background-color: colours.$highlightColour;
+    color: colours.$mainColour;
+  }
+  a {
+    display: block;
+    font-size: font.$fontm;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 16px;
+    text-align: center;
+    margin-bottom: 1vh;
+    padding: 12px 16px;
+    background-color: colours.$secondaryColour;
+    color: colours.$black;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+.mobileNav.isActiveM {
+  left: 0;
+}
+.menu {
+  display: none;
+  flex: 1 1 0%;
+  justify-content: right;
+  margin: 0 1rem;
+  color: colours.$black;
+  font-weight: 300;
+  a {
+    font-size: 2rem;
+    padding: 0em 0.5em;
+    color: colours.$black;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  :after {
+    content: '';
+    display: flex;
+    border-bottom: solid 2px colours.$secondaryColour;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  :hover:after {
+    transform: scaleX(1);
+  }
+}
+.logo {
+  display: absolute;
+  margin-right: auto;
+}
+
+.menu * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
