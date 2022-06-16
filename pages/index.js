@@ -7,33 +7,6 @@ function HomePage() {
           <title>Starter Template</title>
         </Head>
         <div>Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
-        <div>More Content</div>
         <div>Footer below here</div>
       </div>
     </>
