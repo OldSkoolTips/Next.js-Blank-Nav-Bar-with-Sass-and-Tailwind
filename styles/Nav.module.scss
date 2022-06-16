@@ -9,7 +9,6 @@
   justify-content: space-between;
 }
 .nav {
-  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -26,7 +25,7 @@
   display: block;
   position: relative;
   z-index: 1;
-
+  padding: 11px 32px;
   user-select: none;
 
   appearance: none;
@@ -130,10 +129,6 @@
   :hover:after {
     transform: scaleX(1);
   }
-}
-.logo {
-  display: absolute;
-  margin-right: auto;
 }
 
 .menu * {

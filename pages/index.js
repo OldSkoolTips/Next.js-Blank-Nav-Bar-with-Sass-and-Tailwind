@@ -4,10 +4,9 @@ function HomePage() {
     <>
       <div>
         <Head>
-          <title>Basic Nav Bar</title>
+          <title>Starter Template</title>
         </Head>
         <div>Blank Page</div>
-        <div>© Sparky {new Date().getFullYear()}</div>
       </div>
     </>
   )

@@ -26,7 +26,7 @@ const Nav = () => {
           <Link href='/'>
             <a aria-label='Home page'>Home</a>
           </Link>
-          <Link href='/about'>
+          <Link href='/'>
             <a aria-label='About page'>About</a>
           </Link>
           <Link href='/'>
