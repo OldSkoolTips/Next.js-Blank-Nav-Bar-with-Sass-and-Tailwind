@@ -6,7 +6,35 @@ function HomePage() {
         <Head>
           <title>Starter Template</title>
         </Head>
-        <div>Blank Page</div>
+        <div>Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>More Content</div>
+        <div>Footer below here</div>
       </div>
     </>
   )
